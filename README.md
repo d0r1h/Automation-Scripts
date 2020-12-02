@@ -1,2 +1,7 @@
 # Automation Scripts
-Ansible / Automation Scripts for different It tasks i.e. Docker Hadoop Https Server
+Ansible (Automation) Scripts for different IT tasks -
+
+ Hadoop
+ Docker
+ Apache Server (httpd)
+ 
