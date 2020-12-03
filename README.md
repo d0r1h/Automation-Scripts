@@ -16,7 +16,7 @@ Ansible (Automation) Scripts for different IT tasks -
 
 ## Usage:
 
-  __Install Python 3 & Ansible__ 
+__Install Python 3 & Ansible__ 
 	
 	yum install python 3 (RedHat)
 	apt install python 3 (Ubuntu)
@@ -24,7 +24,7 @@ Ansible (Automation) Scripts for different IT tasks -
 	pip3 install ansible 
 	
 	
-	__After Installation__
+__After Installation__
 	
 	> Create a file as hosts.txt and write the inventory
 	
