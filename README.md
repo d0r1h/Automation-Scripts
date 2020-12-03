@@ -6,13 +6,7 @@ Ansible (Automation) Scripts for different IT tasks -
  * Apache Server (httpd)
  * Load Balancer (Server)
  
- 
- 
-## Note:
 
-	These are individual scripts for learning purpose.
-	
-	
 
 ## Usage:
 
@@ -40,7 +34,13 @@ __After Installation__
 	[defaults]
 	inventory = /path/hosts.txt
 	
-	
 	ansible-playbook file.yml  -> to run playbook
+	
+
+ 
+ 
+## Note:
+
+	These are individual scripts for learning purpose.
 	
 	
