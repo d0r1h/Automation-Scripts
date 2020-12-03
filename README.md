@@ -27,15 +27,15 @@ __Install Python 3 & Ansible__
 __After Installation__
 	
 	
-		> Create a file as hosts.txt and write the inventory
+> Create a file as hosts.txt and write the inventory
 	
 	ip_address ansible_user=user ansible_ssh_pass=pass
 	
 	ip_address = target node IP
 	ansible_user = target node username
 	ansible_ssh_pass = targetnode passoword
-	
-		> Update the address of hosts.txt in /etc/ansible/ansible.cfg
+
+> Update the address of hosts.txt in /etc/ansible/ansible.cfg
 		
 	[defaults]
 	inventory = /path/hosts.txt
