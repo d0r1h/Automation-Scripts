@@ -8,28 +8,32 @@ Ansible (Automation) Scripts for different IT tasks -
  
  
  
-## Note :
+## Note:
 
 	These are individual scripts for learning purpose.
 	
 	
 
-## Usage :
+## Usage:
 
-	Install Python36 & Ansible 
+	Install Python 3 & Ansible 
 	
-	yum install python36 (RedHat)
-	apt install python36 (Ubuntu)
+	yum install python 3 (RedHat)
+	apt install python 3 (Ubuntu)
 
 
 	pip3 install ansible 
 	
 	
-	After Installation Done :
+	After Installation:
 	
 	Create a file as hosts.txt and write the inventory
 	
-	ip_address ansible_user = user ansible_ssh_pass = pass
+	ip_address ansible_user=user ansible_ssh_pass=pass
+	
+	ip_address = target node IP
+	ansible_user = target node username
+	ansible_ssh_pass = targetnode passoword
 	
 	Update the address of hosts.txt in /etc/ansible/ansible.cfg
 	
