@@ -6,6 +6,7 @@ Ansible (Automation) Scripts for different IT tasks -
  * Apache Server (httpd)
  * Apache Server http Authentication
  * Load Balancer (Server)
+ * Aws (Amazon Web Service)
  
 
 
