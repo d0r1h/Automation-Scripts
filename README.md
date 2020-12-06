@@ -43,7 +43,7 @@ __After Installation__
  
 ## Note:
 
-	##### Ad-hoc commands :
+##### Ad-hoc commands :
 
 	ansible all -m ping -> check network connecton before running playbook
 	ansible-playbook --syntax-check file.yml -> check syntax error before running 
