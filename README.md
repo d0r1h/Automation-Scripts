@@ -43,9 +43,7 @@ __After Installation__
  
 ## Note:
 
-	These are individual scripts for learning purpose.
-
-	Ad-hoc commands :
+	##### Ad-hoc commands :
 
 	ansible all -m ping -> check network connecton before running playbook
 	ansible-playbook --syntax-check file.yml -> check syntax error before running 
