@@ -3,7 +3,7 @@ Ansible (Automation) Scripts for different IT tasks -
 
  * Hadoop
  * Docker
- * Apache(httpd)
+ * Apache (httpd)
  * Aws (Amazon Web Service)
  
 
