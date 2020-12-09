@@ -1,1 +1,36 @@
-# running docerk container with Ansible
+- hosts: all
+  tasks:
+          - name: Configuing yum for Docker
+            yum_repository:
+                    name: dockerrpm
+                    baseurl: https://download.docker.com/linux/centos/7/x86_64/stable/
+                    description: Dokcer yum repo
+                    gpgcheck: no     
+
+          - name: Installing docker program
+            command: yum install docker-ce --nobest -y
+            args:
+                 warn: no 
+
+          - name: starting docker service
+            service:
+                    name: docker
+                    state: started
+
+          - pip:
+                   name: docker-py
+
+          - name: pulling docker image
+            docker_image:
+                    name: centos:latest
+                    source: pull 
+
+          - name: launching a container
+            docker_container:
+                    name: pawan
+                    image: centos:latest
+                    state: started
+                    exposed_ports:
+                            - 80  
+
+          #  - name: starting and attaching the container 
