@@ -17,6 +17,8 @@ __Install Python 3 & Ansible__
 
 	pip3 install ansible 
 	
+	yum install sshpass (RedHat)
+	apt install sshpass (ubuntu)
 	
 __After Installation__
 	
@@ -45,5 +47,5 @@ __After Installation__
 
 	ansible all -m ping -> check network connecton before running playbook
 	ansible-playbook --syntax-check file.yml -> check syntax error before running 
-	 	
+	ansible-playnook file.yml  -> run ansible playbook 	
 	
