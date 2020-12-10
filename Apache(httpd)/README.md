@@ -9,7 +9,7 @@
 
 
 
-#### Load Balancer(Server) and Reverse Proxy
+__Load Balancer(Server) and Reverse Proxy__
 
 Update the inventory file with group variables
 
