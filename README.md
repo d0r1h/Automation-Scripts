@@ -47,5 +47,5 @@ __After Installation__
 
 	ansible all -m ping -> check network connecton before running playbook
 	ansible-playbook --syntax-check file.yml -> check syntax error before running 
-	ansible-playnook file.yml  -> run ansible playbook 	
+	ansible-playbook file.yml  -> run ansible playbook 	
 	
