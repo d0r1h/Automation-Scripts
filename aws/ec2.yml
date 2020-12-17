@@ -1,1 +1,17 @@
 # running ec2 instance with Ansible
+
+
+- hosts: 127.0.0.1
+  tasks:
+          - name: launching a new ec2 instace
+            ec2_instance:
+                    region: ap-south-1
+                    image_id: ami-08f63db601b82ff5f
+                    instance_type: t2.micro
+                    security_group: sg-a5ef38c2
+                    key_name: AwsHadoopTesting
+                    name: ansible_os
+                    state: present
+                    aws_access_key: 'Enter your own key'
+                    aws_secret_key: 'Enter your own key'
+
