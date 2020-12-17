@@ -38,8 +38,11 @@ __After Installation__
 	
 	ansible-playbook file.yml  -> to run playbook
 	
+> For AWS ansible scripts
 
- 
+	pip3 install boto3    # aws api for python 
+	
+	- hosts: 127.0.0.1   
  
 ## Note:
 
