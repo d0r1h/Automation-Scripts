@@ -1,0 +1,11 @@
+---
+# tasks file for myloadbalancer
+
+
+- name: installing haproxy program
+  package:
+          name: haproxy
+
+- service:
+          name: haproxy
+          state: restarted

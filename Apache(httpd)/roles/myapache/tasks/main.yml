@@ -1,0 +1,16 @@
+- package:
+        name: 'httpd'
+
+- copy:
+        dest: '/var/www/html/index.html'
+        src: 'index.html'
+
+- service:
+        name: 'httpd'
+        state: 'started'
+
+- service:
+        name: 'firewalld'
+        state: 'stopped'
+
+
