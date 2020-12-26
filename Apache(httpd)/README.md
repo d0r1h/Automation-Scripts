@@ -31,4 +31,7 @@ __Load Balancer(Server) and Reverse Proxy__
 
 [Reverse Proxy(Haproxy) with Ansible](https://medium.com/@d0r1h/reverse-proxy-haproxy-with-ansible-962d83da1b09)
 
+> In Role dir
 
+	In role dir I have added roles for seprate services that needed in server and you can run in single click  	  by running **setup.yml** 
+	Product  -- httpd, Haproxy
