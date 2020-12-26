@@ -1,4 +1,8 @@
 - hosts: all
+  vars_prompt:
+          - name: input
+            private: no
+            prompt: "Enter OS name:"
   tasks:
           - name: Configuing yum for Docker
             yum_repository:
@@ -9,6 +13,7 @@
 
           - name: Installing docker program
             command: yum install docker-ce --nobest -y
+            changed_when: false 
             args:
                  warn: no 
 
@@ -16,8 +21,9 @@
             service:
                     name: docker
                     state: started
-
-          - pip:
+                
+          - name: Installing Docker SDK for Python4
+            pip:
                    name: docker-py
 
           - name: pulling docker image
@@ -27,10 +33,11 @@
 
           - name: launching a container
             docker_container:
-                    name: pawan
+                    name: "{{ input }}"
                     image: centos:latest
                     state: started
-                    exposed_ports:
+                    tty: true 
+                    ports:
                             - 80  
 
-          #  - name: starting and attaching the container 
+      
