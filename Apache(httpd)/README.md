@@ -33,5 +33,10 @@ __Load Balancer(Server) and Reverse Proxy__
 
 > In Role dir
 
-	In role dir I have added roles for seprate services that needed in server and you can run in single click  	  by running **setup.yml** 
+	In role dir I have added roles for seprate services that needed in server and 
+	you can run in single click by running setup.yml 
 	Product  -- httpd, Haproxy
+
+
+
+						
